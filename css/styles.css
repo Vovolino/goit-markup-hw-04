@@ -8,6 +8,7 @@
     --border-color: #E7E9FC;
     --icon-footer-hover: #31D0AA;
     --light-slate-color: #8E8F99;
+    --modal-color: #FCFCFC;
 }
 
 body {
@@ -134,7 +135,7 @@ img {
     left: 0;
     bottom: -1px;
     height: 4px;
-    border-color: var(--hover-color);
+    background-color: var(--hover-color);
     border-radius: 2px;
 }
 
@@ -225,7 +226,7 @@ img {
     height: 100%;
     width: 100%;
     transform: translateY(100%);
-    transition: trasform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .products-item {
@@ -489,8 +490,7 @@ img {
 
 .cust-icon {
     fill: currentColor;
-    width: 104px;
-    height: 56px;
+
 }
 
 .cust-link {
@@ -613,7 +613,7 @@ img {
     transform: translate(-50%, -50%);
     width: 408px;
     min-height: 584px;
-    background-color: #FCFCFC;
+    background-color: var(--modal-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -631,15 +631,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-color: var(--border-color);
+    background-color: var(--border-color);
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-    border-color: var(--hover-color);
+    background-color: var(--hover-color);
     border: none;
 
 }
